@@ -1,0 +1,84 @@
+{
+  "id": "6de764c5-96a3-4b4e-8cc2-79724b9863be",
+  "version": "2.0",
+  "name": "GB_TEST",
+  "url": "https://gb.ru",
+  "tests": [{
+    "id": "477d8a30-5c8d-4b73-b1a7-b0ffd2ec2030",
+    "name": "Open first active course on GeekBrains",
+    "commands": [{
+      "id": "8de26264-2518-48e0-a780-1e47929b2f18",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "10dee37e-587a-48ea-a218-b1786d295ebc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fcc63816-8707-4e16-bd94-c9ede310c0aa",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Моё обучение",
+      "targets": [
+        ["linkText=Моё обучение", "linkText"],
+        ["css=.mn-header__user-box-btn > .mn-btn-default", "css:finder"],
+        ["xpath=//a[contains(text(),'Моё обучение')]", "xpath:link"],
+        ["xpath=//div[@id='header-monolit']/header/div/div/div[2]/div[4]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/education')]", "xpath:href"],
+        ["xpath=//div[4]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Моё обучение')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "37a34850-a0b0-48b6-b803-240d920a10ed",
+      "comment": "",
+      "command": "click",
+      "target": "css=.\\_2d28:nth-child(1) > .\\_8cf8:nth-child(2) .dbf2 > a",
+      "targets": [
+        ["css=.\\_2d28:nth-child(1) > .\\_8cf8:nth-child(2) .dbf2 > a", "css:finder"],
+        ["xpath=//div[@id='EducationPage-react-component-543324b2-c634-4db6-b071-dbbc14027ea5']/div/div[2]/div[2]/div/div/div[2]/div/div/div/h3/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/chapters/18942')])[2]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb61f569-49fb-40bc-990e-1007591b34d1",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.lessons-list__item:nth-child(5) .lesson-header__title",
+      "targets": [
+        ["css=.lessons-list__item:nth-child(5) .lesson-header__title", "css:finder"],
+        ["xpath=//div[4]/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Куратор и помощь в решении организационных вопросов')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "896f3cd7-5a19-4b10-9b3b-64379dcb010d",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.lessons-list__item:nth-child(5) .lesson-header__title",
+      "targets": [
+        ["css=.lessons-list__item:nth-child(5) .lesson-header__title", "css:finder"],
+        ["xpath=//div[4]/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Куратор и помощь в решении организационных вопросов')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d7e74030-e328-4167-9373-abc666d9ff77",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["477d8a30-5c8d-4b73-b1a7-b0ffd2ec2030"]
+  }],
+  "urls": ["https://gb.ru/"],
+  "plugins": []
+}
