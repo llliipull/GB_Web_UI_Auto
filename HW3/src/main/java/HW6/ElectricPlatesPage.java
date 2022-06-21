@@ -1,5 +1,6 @@
 package HW6;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -21,7 +22,7 @@ public class ElectricPlatesPage extends BasePage {
             "//button[@class='button-ui buy-btn button-ui_brand']")
     private WebElement firstBuyButtonActive;
 
-
+    @Step("Кликнуть по кнопке 'купить' для первого товара")
     public AddToCartPopup clickFirstBuyButton(){
         driverWait.until(ExpectedConditions.visibilityOf(firstProductItem));
         actions.moveToElement(firstProductItem).build().perform();
